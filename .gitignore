@@ -3,6 +3,7 @@
 *~
 
 # generated files
+ltmain.sh
 *.m4
 configure
 Makefile.in
