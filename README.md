@@ -3,8 +3,6 @@
 Simple project with library using old libtool automake and autoconf.
 
 
-Tested (intentionally) under `Debian 6.0.6/i386`
-
 # Basic concepts
 
 To understand autoconf properly one need to know that there
@@ -24,6 +22,29 @@ End user need just to have installed C compiler and make tool.
 
 
 # Setup
+
+Tested under:
+* `Debian 6.0.6/i386` - intentionally - to verify that even old libtool etc. will work
+* `Debian 9.8/amd64` - to verify backward compatibility. NOTE: Please ignore
+   warning:
+   
+   ```
+   autoconf input should be named 'configure.ac', not 'configure.in'
+   ```
+
+   This is our drawback because of full backward compatibility with old Linux versions.
+
+Both **end user** and **maintainer** need to install basic development tools:
+
+```bash
+sudo apt-get install build-essential
+```
+
+Maintainer needs to additionally install:
+```bash
+sudo apt-get install libtool autoconf automake 
+```
+
 
 Here are necessary steps to build from repository - like **maintainer**.
 
