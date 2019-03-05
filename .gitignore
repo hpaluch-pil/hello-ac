@@ -7,8 +7,20 @@
 *.m4
 configure
 Makefile.in
+Makefile
 config.*
 missing
 install-sh
 depcomp
+libtool
+.deps/
+.libs/
+autom4te.cache/
+compile
+fooac.lo
+fooac.o
+libfooac.la
+helloac
+helloac.o
+helloac.static
 
