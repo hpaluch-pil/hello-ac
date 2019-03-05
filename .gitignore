@@ -3,6 +3,7 @@
 *~
 
 # generated files
+*.tar.gz
 ltmain.sh
 *.m4
 configure
