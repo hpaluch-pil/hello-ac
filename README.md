@@ -24,7 +24,20 @@ End user need just to have installed C compiler and make tool.
 # Setup
 
 Tested under:
-* `Debian 6.0.6/i386` - intentionally - to verify that even old libtool etc. will work
+* [scratchbox](http://www.scratchbox.org/) environment
+  for ARM in following configuration:
+  
+  ```
+  sb-conf show warpcomm
+     Compiler: arm-linux-cs2010q1-202
+     Devkits: autotools-legacy mtd python-legacy qemu svn git
+     CPU-transparency: /scratchbox/devkits/qemu/bin/qemu-arm-sb
+
+  ```  
+
+* `Debian 6.0.6/i386` - intentionally - to have good chance that it
+   will work also under above `scratchbox` (which was confirmed)
+
 * `Debian 9.8/amd64` - to verify backward compatibility. NOTE: Please ignore
    warning:
    
