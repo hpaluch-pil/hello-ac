@@ -15,7 +15,7 @@ lib_LTLIBRARIES = libfooac.la
 # source files of libfooac
 libfooac_la_SOURCES = fooac.c
 # library versioning 
-libfooac_la_LDFLAGS = -version-info 1.0.0
+libfooac_la_LDFLAGS = -version-info 1:0:0
 
 # headers to be installed into
 # ${prefix}/include, otherwise add them to  *_SOURCES
