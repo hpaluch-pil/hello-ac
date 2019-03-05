@@ -4,6 +4,9 @@
 # foreign is least restrictive (no need for NEWS, AUTHORS,... files)
 AUTOMAKE_OPTIONS = foreign
 
+# hint from libtoolize
+ACLOCAL_AMFLAGS = -I m4
+
 # extra files to be distributed
 EXTRA_DIST = aclocal.m4 README.md .gitignore
 

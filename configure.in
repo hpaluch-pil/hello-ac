@@ -2,6 +2,12 @@ dnl AC_INIT - always 1st command
 dnl argument - name of some source file
 dnl used for basic sanity check in autoconf
 AC_INIT(helloac.c)
+
+dnl hint from libtoolize
+AC_CONFIG_MACRO_DIR([m4])
+
+AC_PROG_LIBTOOL
+
 dnl name and version of created package
 AM_INIT_AUTOMAKE(helloac,1.0)
 
