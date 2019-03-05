@@ -71,6 +71,12 @@ automake -a
 autoconf
 ```
 
+Or just run:
+
+```bash
+./maintainer-setup.sh
+```
+
 ## Building sample project
 
 These steps are  used for both **end user** and **maintainer**:
@@ -104,6 +110,21 @@ run this command sequence to refresh generated files:
 ```
 automake; aclocal; autoconf
 ```
+
+# Maintainer clean
+
+To clean all files that are not needed in git repository
+you can use this command:
+
+```bash
+./maintainer-clean.sh
+```
+
+WARNING!
+
+It will work only if there is `Makefile` (that is the `./configure`
+script was already run before)
+
 
 # Libtool versioning
 
