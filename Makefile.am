@@ -5,7 +5,7 @@
 AUTOMAKE_OPTIONS = foreign
 
 # extra files to be distributed
-EXTRA_DIST = aclocal.m4 README.md
+EXTRA_DIST = aclocal.m4 README.md .gitignore
 
 # library name - `.la` is used for libraries maintained with libtool
 lib_LTLIBRARIES = libfooac.la
