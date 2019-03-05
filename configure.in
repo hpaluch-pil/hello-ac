@@ -1,0 +1,18 @@
+dnl AC_INIT - always 1st command
+dnl argument - name of some source file
+dnl used for basic sanity check in autoconf
+AC_INIT(helloac.c)
+dnl name and version of created package
+AM_INIT_AUTOMAKE(helloac,1.0)
+
+dnl test/configure C compiler
+AC_PROG_CC
+dnl test/configure libtool
+AM_PROG_LIBTOOL
+
+dnl example - verify that libm.{so,a} contains function cos()
+AC_CHECK_LIB(m, cos)
+dnl if successfull then defines macro -DHAVE_LIBM
+
+dnl list of files to be generated from *.in
+AC_OUTPUT(Makefile)
