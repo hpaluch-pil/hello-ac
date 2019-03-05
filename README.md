@@ -37,7 +37,7 @@ automake -a
 autoconf
 ```
 
-= Building sample project
+## Building sample project
 
 These steps are  used for both **end user** and **maintainer**:
 
@@ -49,7 +49,7 @@ make
 sudo make install
 ```
 
-= Create end-user source distribution
+## Create end-user source distribution
 
 Issue this command to create source distribution archive:
 
@@ -62,9 +62,9 @@ The end user than just isse `./configure` and `make` command
 without need to install `libtool`, `autoconf` or `automake`.
 
 
-= Re-bootstrap
+# Re-bootstrap
 
-If you modify any of `configure.in`, `Makefile.am` you should
+If you (as maintainer) modify any of `configure.in`, `Makefile.am` you should
 run this command sequence to refresh generated files:
 
 ```
@@ -72,8 +72,9 @@ automake; aclocal; autoconf
 ```
 
 
-= Resources
+# Resources
 
-* https://www.linux.cz/noviny/1998-0809/clanek12.html
+* Author's original guide written in late 90's in college
+  - https://www.linux.cz/noviny/1998-0809/clanek12.html
 
 
