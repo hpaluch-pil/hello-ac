@@ -18,10 +18,7 @@ autoconf
 
 = Building sample project
 
-These steps are done for source distribution - source
-archive created using `make dist`.
-
-
+These steps are  used for build from "source distribution" (see next chapter).
 
 Example:
 
@@ -31,6 +28,17 @@ make
 sudo make install
 ```
 
+= Create end-user source distribution
+
+Issue this command to create source distribution archive:
+
+```
+make dist
+```
+
+And distribute created `helloac-1.0.tar.gz` archive.
+The end user than just isse `./configure` and `make` command
+without need to install `libtool`, `autoconf` or `automake`.
 
 
 = Re-bootstrap
@@ -42,10 +50,6 @@ run this command sequence to refresh generated files:
 automake; aclocal; autoconf
 ```
 
-
-= Initial setup
-
-This is for reference only - original project bootstrap:
 
 = Resources
 
