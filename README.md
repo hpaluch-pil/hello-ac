@@ -79,6 +79,18 @@ Or just run:
 
 ## Building sample project
 
+For end-user: download and extract
+[helloac-1.0.tar.gz][helloac-1.0.tar.gz] for example using:
+
+```bash
+mkdir ~/projects
+cd ~/projects
+wget https://github.com/hpaluch-pil/hello-ac/archive/helloac-1.0.tar.gz
+tar xzf helloac-1.0.tar.gz
+cd hello-ac-helloac-1.0
+# and continue below:
+```
+
 These steps are  used for both **end user** and **maintainer**:
 
 Example:
@@ -143,4 +155,4 @@ Please see for more information:
 * Author's original guide written in late 90's in college
   - https://www.linux.cz/noviny/1998-0809/clanek12.html
 
-
+[helloac-1.0.tar.gz]: https://github.com/hpaluch-pil/hello-ac/archive/helloac-1.0.tar.gz
