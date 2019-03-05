@@ -105,6 +105,17 @@ run this command sequence to refresh generated files:
 automake; aclocal; autoconf
 ```
 
+# Libtool versioning
+
+WARNING!
+
+Libtool uses its own versioning system in form
+`current:revision:age` instead of common linker `major:minor:patch`.
+
+Please see for more information:
+-  http://blog.asleson.org/index.php/2014/07/08/libtool-library-versioning-version-info-currentrevisionage/
+- https://www.gnu.org/software/libtool/manual/html_node/Updating-version-info.html#Updating-version-info
+- calculator: https://www.pakin.org/~scott/ltver.html
 
 # Resources
 

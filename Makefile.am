@@ -14,8 +14,29 @@ EXTRA_DIST = aclocal.m4 README.md .gitignore
 lib_LTLIBRARIES = libfooac.la
 # source files of libfooac
 libfooac_la_SOURCES = fooac.c
-# library versioning 
-libfooac_la_LDFLAGS = -version-info 1:0:0
+
+# WARNING! This is obscure setting:
+#          According to:
+#          -  http://blog.asleson.org/index.php/2014/07/08/libtool-library-versioning-version-info-currentrevisionage/
+#          - https://www.gnu.org/software/libtool/manual/html_node/Updating-version-info.html#Updating-version-info
+#          - https://www.pakin.org/~scott/ltver.html
+#
+# standard linux versioning: 'major:minor:patch'
+# libtool versioning:        'current:revision:age' -> 'c:r:a'
+#                             condition: ' a <= c '
+#
+# There are 3 scenarios:
+#
+# 1. full compatibility retained (comparable to 'patch' level increase): 
+#    Outcome: 'c:r:a' => 'c:r+1:a'
+#
+# 2. backward compatibility (comparable to 'minor' level increase):
+#    Outcome: 'c:r:a' => 'c+1:0:a+1'
+#
+# 3. incompatible change (comparable to 'major' level increase):
+#    Outcome: 'c:r:a' => 'c+1:0:0'
+#
+libfooac_la_LDFLAGS = -version-info 0:0:0
 
 # headers to be installed into
 # ${prefix}/include, otherwise add them to  *_SOURCES
