@@ -2,3 +2,13 @@
 *.swp
 *~
 
+# generated files
+*.sh
+*.m4
+configure
+Makefile.in
+config.*
+missing
+install-sh
+depcomp
+

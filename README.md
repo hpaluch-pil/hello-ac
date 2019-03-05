@@ -5,7 +5,28 @@ Simple project with library using old libtool automake and autoconf.
 
 Tested (intentionally) under `Debian 6.0.6/i386`
 
+# Basic concepts
+
+To understand autoconf properly one need to know that there
+are actually **two** source distributions:
+
+1. **Maintainer** source
+1. **End user** source
+
+
+**Maintainer** is one who develops this project and is commiting new version to repository.
+Maintainer needs to have installed additionally `libtool`, `autoconf` and `automake` to
+be capable to regenerate target script files (for example `configure` script) from
+templates (for example `configure.in`).
+
+**End user** is one who just wants to build binary in his Unix environment from source.
+End user need just to have installed C compiler and make tool.
+
+
 # Setup
+
+Here are necessary steps to build from repository - like **maintainer**.
+
 
 To prepare all build scripts from this source code issue:
 
@@ -18,7 +39,7 @@ autoconf
 
 = Building sample project
 
-These steps are  used for build from "source distribution" (see next chapter).
+These steps are  used for both **end user** and **maintainer**:
 
 Example:
 
