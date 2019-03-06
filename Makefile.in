@@ -368,7 +368,7 @@ AUTOMAKE_OPTIONS = foreign
 ACLOCAL_AMFLAGS = -I m4
 
 # extra files to be distributed
-EXTRA_DIST = aclocal.m4 README.md .gitignore
+EXTRA_DIST = aclocal.m4 README.md
 
 # library name - `.la` is used for libraries maintained with libtool
 lib_LTLIBRARIES = libfooac.la
@@ -396,7 +396,7 @@ libfooac_la_SOURCES = fooac.c
 # 3. incompatible change (comparable to 'major' level increase):
 #    Outcome: 'c:r:a' => 'c+1:0:0'
 #
-libfooac_la_LDFLAGS = -version-info 0:1:0
+libfooac_la_LDFLAGS = -version-info 1:0:1
 
 # headers to be installed into
 # ${prefix}/include, otherwise add them to  *_SOURCES
