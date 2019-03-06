@@ -11,6 +11,8 @@ AC_PROG_LIBTOOL
 dnl name and version of created package
 AM_INIT_AUTOMAKE(helloac,1.2)
 
+AC_CONFIG_HEADERS(helloac-config.h)
+
 dnl test/configure C compiler
 AC_PROG_CC
 dnl test/configure libtool

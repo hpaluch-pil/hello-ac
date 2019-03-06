@@ -2,6 +2,9 @@
  * fooac.c - librafy fooac (foo autoconf) source file
  */
 
+/* should be first included file */
+#include "helloac-config.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 

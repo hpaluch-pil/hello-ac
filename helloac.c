@@ -2,6 +2,9 @@
  * helloac.c - hello autoconf - main executable
  */
 
+/* should be first included file */
+#include "helloac-config.h"
+
 #include <stdlib.h>
 #include <stdio.h>
 

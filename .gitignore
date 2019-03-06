@@ -3,6 +3,8 @@
 *~
 
 # generated files
+stamp-*
+helloac-config.h*
 *.tar.gz
 ltmain.sh
 *.m4
