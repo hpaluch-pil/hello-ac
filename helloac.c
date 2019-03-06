@@ -16,7 +16,7 @@ int main(int argc, char **argv){
 
 	fooac_func1(123);
 	puts("");
-	fooac_func2(456789);
+	fooac_func2(456789,4444);
 
 	return EXIT_SUCCESS;
 }

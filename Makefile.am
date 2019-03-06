@@ -36,7 +36,7 @@ libfooac_la_SOURCES = fooac.c
 # 3. incompatible change (comparable to 'major' level increase):
 #    Outcome: 'c:r:a' => 'c+1:0:0'
 #
-libfooac_la_LDFLAGS = -version-info 1:0:1
+libfooac_la_LDFLAGS = -version-info 2:0:0
 
 # headers to be installed into
 # ${prefix}/include, otherwise add them to  *_SOURCES
